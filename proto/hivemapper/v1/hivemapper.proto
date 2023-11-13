@@ -9,12 +9,18 @@ message Output {
 
   repeated AiTrainerPayment ai_trainer_payments = 50;
 
+//  repeated HoneyOutput honey_output = 1;
   repeated Transfer transfers = 60;
   repeated Mint mints = 70;
   repeated Burn burns = 80;
 
   repeated InitializedAccount initialized_account = 120;
 }
+
+//message HoneyOutput {
+//  string type = 1;
+//  repeated Mint mint = 2;
+//}
 
 message TokenSplittingPayment {
   Mint manager_mint = 1;
